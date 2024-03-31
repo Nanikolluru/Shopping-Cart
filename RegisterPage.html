@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>VvReGiStEr</title>
+    <link rel="stylesheet" href="Design.css">
+    <script type ='text/javascript'>
+        function check(){
+        x=document.getElementById('login').value;
+        z=document.getElementById('password').value;
+        if(x==""){
+        alert("Please Enter Username");
+        return false;
+         }
+        if(z==""){
+        alert("Please Enter Password");
+        return false;
+         }
+        return true;
+        }   
+        </script>
+</head>
+<body class="LoginOutline" >    
+        <table border ='2' align ='center'> 
+            <tr>
+            <td bgcolor="gold" style ='color:black'>
+            Roll No. <input type ='text'/>
+            <br/>
+            <br/>
+            Name     <input type ='text'/>
+            <br/>
+            <br/>
+            Branch   <select>
+            <option>Select</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>CSM</option>
+            <option>CSD</option>
+            <option>CIVIL</option>
+            <option>EEE</option>
+            <option>IT</option>
+            </select> 
+            <br/>
+            <br/>
+            Year of Graduation  <select>
+            <option>Select</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            </select>
+            <br/>
+            <br/>
+            Semister <select>
+            <option>Select</option>
+            <option>I/I</option>
+            <option>I/II</option>
+            <option>II/I</option>
+            <option>II/II</option>
+            <option>III/I</option>
+            <option>III/II</option>
+            <option>IV/I</option>
+            <option>IV/II</option>
+            </select>
+            <br/>
+            <br/>
+            Gender <input type ='radio' id ='male' name='gender'/>Male 
+                   <input type ='radio' id ='female' name='gender'/>Female
+            <br/>
+            <br/>
+            Username <input type ='text'/>
+            <br/>
+            <br/>
+            Password <input type ='password'/>
+            <br/>
+            <br/>
+                     <input type ='button' value ='Register' onclick='return check()'/>  
+            </td>
+            </tr>
+        </table>
+</body>
+</html>

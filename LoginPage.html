@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>VvLoGiN</title>
+    <link rel="stylesheet" href="Design.css">
+    <script type ='text/javascript'>
+        function check(){
+        x=document.getElementById('login').value;
+        z=document.getElementById('password').value;
+        if(x==""){
+        alert("Please Enter Username");
+        return false;
+         }
+        if(z==""){
+        alert("Please Enter Password");
+        return false;
+         }
+        return true;
+        }   
+        </script>
+</head>
+<body class="LoginOutline" >    
+    <h1 class="Heading">Vv LoGiN pAgE</h1>
+    <div class="LoginLayout">
+        <form action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBIQEhIVEBEQEBATEhYSEhISEBAVFhYWFhcVFRUYHSggGhslGxUTIjEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGhAQGyslHx8tKzU3LTU2LSstNS01NystLS0tKy8tLSwvLS0tNy0tLS0tMCstLS0rLSstLS0tLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABBEAACAQIDBAcEBgkDBQAAAAAAAQIDEQQSIQUGMVETIkFhcYGRBzKh0RRCUqKxwSMzYnKCkrLC8FPh4hY0Q6Oz/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAkEQEAAgICAQMFAQAAAAAAAAAAAQIDERIhMQQiQRMjMlFhcf/aAAwDAQACEQMRAD8A4aAAAAAAAAAAAAAAAAAfVFvgr+AHwH1q3cfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB9jG7stWwkbOCTU07P0YErgdlQjrU60uX1V8yThVS0SSXckiOdY+9Kcq3q8oyjaaUl3oqmJglJ2916rwJXFV9LcyOxi93z/IsEtYAFQAAAAAAAAAAAAAAAAAAAAAAAAAJDZmz87vLSPxYGHAYKVWVlolxb4IsOH2NSjxWd9/yMcbQnZKytobyqEV6jh4LhFeh9ko8LL0R5dQxwld3IrK8NB/VX4GKpgIPhoZJVLGvUxVgI/F4K0lqReMUm/ddl3MnaCcpXfA3J4aL7LeARTATe0sAr6cefzIerScXZq35nSPAAAAAAAAAAAAAAAAAAAAAAAAMuGp5pJdnaTtCVtCGwUHdvkiQhUJKw28UtFLke6dfQwKpdWMcXZ2IrclWPUatkalwm5SUIpyk+EYpyk/BLVgZp1rmvRxlpapSj23SZZdmez/AGhXSfRKhF9taWWVu6KTfrYksZ7LZUqeedZza49HFRX3rnE5Kx8u4xXn4V+VJKOaHC19ODRgWJvojbp0uilKi22oNZW7XcXqr+DuvIzf9JYvoY4mlBV6M1JronmqRSbTUqdk20011cx1yjW3PGd6R04GjiMOmrcUbEnLhZ6aPQwu/IqIPEUXGVvQxErjMO2m+3s+RFFhyAAoAAAAAAAAAAAAAAAAAADbwU7J+JObI3exOJTlRp3je2aTyxb7UmRWwcK6teFFOzqyjG/JfWfkrs7/ALJw8acI04JRhCKUUuCS4GGXJx8N8OPn5cyw/s5x7/0Y+NWX5QZN4H2VVZNdLiYRXaqcJTf80mvwOlUjZpGH1rPR9Cio7N9l+BhZ1HVxDTv155I/ywtp43LdszY+HoLLQo06K/YhGLfi1qzagZUSbTPl1FYjxD5lMWIoKUXF8GjYPMiOnEd+MB0NeMuClmi/6kv6/Uu3s7nfZ9PuqV1/7JP8zQ9rOEXQdLb3Jwfq8n9xu+zim47OpJ8W6k/KU5OP3cp3M/b1/WUR92f8aG/GwIyi8VTilOP61L/yR+2/2lz7V4IoVWh3Haa8U009U001zT0aOX4/BZJyg+MJSj42ejLjvOtOctI3tWcVhrplTqQs2uR0GrQKbtyhlqvk9fXX5+h6KS896o4AGjMAAAAAAAAAAAAAAAAAAFn9nlNPGxk/qQnJeacf7jtmDlocT9nk7YzxpT/FHZcJLQ8fqPye70/4JmlM2qcyLhUM9KsYN0vTmZVMjqdYydMdbRu5zWxu0aNJXq1YUl2dJOML+F3qcs3j3kx7qSpTbwqTfVpvK2ux9Ius9O1NJ8ivU4wu5VHOcnxyuMW3zdSSl/SbVxTLz2zRHS8+0Lb2Dr4SdGnXUpycErQqOKtOLbvltok2Sm5mJoyw6hRqRkqcYrKn1opKyvF6o51KvhsuX6Nm754io39zKvgZMDiaFOpTqxpTg6UlJKnXaTt2Nyi3Z8HrqmdTh605jNG9us1Sobz4HrdMuErKfc1on5q3p3meG+tKS1pTi+V4v46G7hsXDEUs6TyyzRala+ja1t6+ZjxtTuYb8q36iVGq0yo720LOEuaa9H/yOiY/Z+WTXZ2d6Kvvlsqo8MqsYScY1VFtRbXWTSWne4rzRtjt2wyV6c/BnxeDqUpZatOdKTV0qkJQbXOzXAwHpeUAAAAAAAAAAAAAAAAB7pU80lFcZNJX4auxZcBsaEOtLry711V4Lt8wNbdCM4YmnWcWqaz5pW0s4tac9bcC3Y/beInKShU6KndqKhdTa5uXG77mRcqijJKV+KzJO1l26tce63yLrHZmFpx/Uqcn9pyqN+Um0vIyvxidy2x8pjUKY4zm/wBJVm1zblN+jf5l52VtyhTowg62bo4Ri3KM1J2XKz/MidoYah9anCk+xxn0cvKN8r80yCxNHK7XzRavF8/90c6rk6dbvj7X176YePBVJ+EUl95p/AiNtb51KiyUU6MXxle9V+DWkfLXvRWMNRnJXUdNVfRJtaO1zLhKOarCD7ZxTXnwLXHjievhLZckx38tnB7OzrPUk4xlqkrOrO/bd8PF3fcSlHB01pDDxl31L1L+U7r0RLVMEqVOVaabyq9ktZPgku9uy8zV2zsSVJ4eeNqT6OrnnWo0G4Ro04un1E071J2lK78lzOOVrd/DvjWnWty+Qc4r/t6SXJUaaXplNfFU8PVTjKlHD1Ncs6cI00n+1GCSkuel+RWdvUqEcTN7PdWnh7QyNzqqd8qzNNvNa9+OpObEwONrwWW2KXRSqOM3GnXSjKMXkm9Ju8uEmr80WaWr4lIyVt5hDaxbT0cW01yadmXndbDVIYf9IsuebnFP3lFxitV2cG7d5S9sU3GcrpxbgrqSs00stmux9U6bGpmgpc1cme3tj+r6evun+I/aMLx776c9ewsOEoRo00p2SoQV+Wd3lJ+TzfA1cDhk30svdpu8b8M6XF90b38bENhdpfSemS9x1o2X7CSt62v5mce3Hv8AbSZ5ZNfppb54X6dhK36PWlCdShL6+aKvZd0krW7+44UfqOVKKoVNNFTn/Sz8uGvp5nUwy9TEbiQAHoeYAAAAAAAAAAAAAeqc7NPk0/Qu2zsRCrlcXdOSTvxXNMo5M7tV7TlC/vK68V/s/gBLV7uUr8XKV/G+p0PBU6lanQhR/XYmMes+FKKinKXl87a2KNtiFq05L3an6WPhU61l4Nyj/Czp3s5qP6JRnZZkqsE7a5VUen3V6GeSI6mWmPfcQgcRhaWFWKozw0cTUqOtSp1qj69KUXKCqJNPVpqWjT046lR+iuEr9j08zueJ2TRrScqkMzla9nKN2la+j42SKV7SNmYfD0qEaUMk6lWc3eUpPLTjZ6ybsr1F/iJS8T0t8cxG0bujs9Tgs64ubjdcU5yszDvZsx4bEQqR92WWS5Kcbf8AF+TLBuTs6f0elJxabinrpx1JzefYv0nDuKXXSvH95cP85NmNItF5nTe81nHETPbaweEhiaNGrH3JdFUXjGSnlfnGzNnePZccTCKWlSDdsy6rjOynFtX5Rf8AD3lM3C3ieFnPB4m8Iqb95a0ZdrfOL0btw97VNtdOjFSSkrNNJpp3TT7UacbRuIZ86zqZ8qFh/Z3SvedWTXKCimv4ne/oWfB7IpUY5accqyZOLbceT9ES/Rd5Wt7d6qOEhKMWquJa6lO91B/aqW4JcuL9WnC8+SL0r4hzTfSmnjZUocUqdLT7ctf70vI6FDCe7FaR4XfBd9zmmw8NOviVOV5Nzcm3xnNu7k/Nvz8Dq9SLypckkdWxRbW/hzXLNdzHyrO/u11SorDU3aVSNnzjT7b98nf73cQe4VTNOtHkqT9c/wAkQO9uMlLF1s71jNx8o6L4JPzJH2cY6nCtWdWcYRy0leTSV7z0uzjLHtl3inVoX3ezFdDszFVL2f0eoo/vSWWPxaPzQdU9re99OrTWCoTU05KVVxd4pR1jG/O9n3WOVHWCuquc9t26AAbMAAAAAAAAAAAAAAMlCq4yUlo4u6MYAveGxkMRQjFvLOF8kn9W+rpz7r6p9ng2dY9n1CKwNCLTzR6W6uuLqTk+HFa6Pk0fnLC4mVOWaLs+3k+5ou+wpzq0VUUnCTbTUc1tO+4mNrE6d32jtTD4eGerONNdibeaXdGPFvwObyzbVxrnOLjhaSUWm+FO7ag39ubve3BduivGbP3cqVZJybs3q7Wl6u50HZ2FhRpqnTioRj2Ltfa23q33skREEzMpnDJcFpZO3dob8YpIhsPU18dDepV7peBUR28m7FDFpSlenWirQqwtmVtUpL60b620a7Grsp2I2NtPBpujXzU1w6Obin3ypy0v6+J0XpA2mrPVAcjxW1dpVOrOtWtyU8i88nE18DsCpN2yt3fKy832nXHs+i3fo4mWFKEfdil4ICA3d2CqEc0l12vQlMRL/PgZ61Qi8XWA5Hv/ANXH1WvrqnL7ij+MWVLaeK/RRpLjOfSS8EssF/8AR+Eolo36WfHSu7QjQhOo9Lxgm72722orvkijYmtnnKVrXeiXCK4KK7krLyJELM9MQAKgAAAAAAAAAAAAAAAAAABf/ZVjY56mHlxdqke/hGX9vxKAbeysdKhWhWhxhJO3Ndq81dAfo+m1bQ+5iF2LteFalCpF3jJJr5PvJaErgZYz1NmlV1a814PX8b+hqxibEYe6/FP8V+YG3GoZFMwxiegM+c8TqmCczUr4gDJiMQQ+JxHE8YvGFZ3n22qFCU73k+rBfak+HkuL8AKPv3taM686VPgpLpZadeUbqMV+zG8vOT5Iqh6nNttt3bbbb4tvizyAAAAAAAAAAAAAAAAAAAAAAAABYN1d5JYWeV3dKT1XbF/aXyOtbI2zCrFSjJSi+DTOCm/sra1XDyzU5WXbF6wl4r8wP0Vh6yZvwksr7rP0d38LnLN3t+KU7Rm+inppJ6P92XB/Bl2wW14u2ujAsmYxVKpFraKta/DQ0cXtqK7QJTEYmxC43Hd5Wds76UYXWfNL7MOtLw00XmUba+91ardQ/RRfJ9d+fZ5eoFw3h3pp0bq+ep2RT4fvPsRzjae0qleeepK77EtIxXJI1G76vVvj3nwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3hNpVqf6urOKXYpPL6cDUAEw958X/rP+WHyNLFbSrVPfqSkn2NvL6LQ1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+              <button type="submit">Login</button>
+              <label>
+                <input  type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:gold">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+    </div>
+     <div class="LoginHeadline">
+        <h1>VANDYVENDER</h1>
+    </div>
+</body>
+</html>
